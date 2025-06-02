@@ -1,0 +1,45 @@
+---
+import '../styles/base.css';
+const { title } = Astro.props;
+
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/public/img/icono.jpg" type="image/x-icon">
+
+    <title>{title}</title>
+</head>
+<body>
+    
+    <header>
+        <img src="/img/logo_cha.jpg" alt="Logo">
+        <div class="hamburger" onclick="document.querySelector('nav ul').classList.toggle('active')">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/about">Sobre</a></li>
+            <li><a href="/blog">Contacto</a></li>
+        </ul>
+    </nav>
+    <a class="boton_log" href="/login">Inicias Seción</a>  
+</header>
+
+    <main>
+        <slot/>
+    </main>
+    
+    <footer>
+        <p>&copy {new Date().getFullYear()} Taller Chanka's Car. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+

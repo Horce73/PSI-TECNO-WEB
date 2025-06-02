@@ -1,0 +1,42 @@
+section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+section div {
+    flex: 1;
+    padding-bottom: 1rem;
+    justify-items: center;
+    margin-top: 5rem;
+}
+
+section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #08496c;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+section img {
+    flex: 1;
+    border-radius: 8px;
+    width: 15rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section img {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+}

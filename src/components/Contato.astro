@@ -1,0 +1,51 @@
+---
+import '../styles/contacto.css'
+---
+<section class="contacto">
+  <div class="cont_form">
+    <h2 class="contacto__titulo">Contáctanos</h2>
+    <form class="contacto__formulario" action="#" method="POST">
+     <div class="form__fila">
+        <div class="form__grupo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+        </div>
+        <div class="form__grupo">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="asunto" required />
+        </div>
+      </div>
+      
+      <div class="form__grupo">
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+  
+      <div class="form__grupo">
+        <label for="asunto">Celular:</label>
+        <input type="text" id="asunto" name="asunto" required>
+      </div>
+  
+      <div class="form__grupo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+  
+      <button type="submit" class="form__boton">Enviar Mensaje</button>
+    </form>
+  </div>
+  <div class="cont_ubicacion">
+    <div class="cont_mapa">
+      <h2 class="contacto__titulo">Ubicación</h2>
+      <div class="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679.0010450005633!2d-65.26114113732785!3d-19.02791379788053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93fbc991877f1ed3%3A0xdfb4b3dbe17bb2f4!2sTaller%20Chanka&#39;s%20Car!5e0!3m2!1ses-419!2sbo!4v1748594975629!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      </div>
+    </div>
+    <div class="cont_datos">
+      <h2 class="contacto__titulo">Datos de contacto</h2>
+      <p><strong>Teléfono:</strong> +591 74106444</p>
+      <p><strong>Dirección:</strong> Av. Miguel Peredo N° 177</p>
+      <p><strong>Horario:</strong>  Lunes a Viernes: 8am - 6pm</p>
+      <p>Sábado: 8am - 12pm</p>
+    </div>
+  </div>
+</section>
